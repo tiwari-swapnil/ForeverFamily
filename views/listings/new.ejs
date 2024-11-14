@@ -1,0 +1,60 @@
+<% layout("/layout/boilerplate") %>
+<body>
+    <div class="row">
+    <div class="col-8 offset-2">
+    <h3><b>Create new listing</b></h3>
+    <br>
+    <form action="/listings" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="name" class="form-label"><b>Name</b></label>
+            <input type="text" name="listing[name]" placeholder="Enter the name" class="form-control" required />
+            <div class="valid-feedback"> Looks good! </div>
+            <div class="invalid-feedback"> Please Enter Name </div>
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label"><b>Title</b></label>
+            <input type="text" name="listing[title]" placeholder="Enter the title" class="form-control" required />
+            <div class="valid-feedback"> Looks good! </div>
+            <div class="invalid-feedback"> Please Enter Title </div>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label"><b>Upload Image</b></label>
+            <input type="file" name="listing[image]" class="form-control" />
+            <div class="valid-feedback"> Looks good! </div>
+            <div class="invalid-feedback"> Please upload Image </div>
+            required
+            
+        </div>
+       <div class="mb-3">
+            <label for="age" class="form-label"><b>Age</b></label>
+            <input  name="listing[age]" placeholder="Enter the age" class="form-control" required/>
+            <div class="valid-feedback"> Looks good! </div>
+            <div class="invalid-feedback"> Please Enter Age </div>
+       </div>
+       <div class="mb-3">
+            <label for="orphanage_name" class="form-label"><b>Orphanage Name</b></label>
+            <input type="text" name="listing[orphanage_name]" placeholder="Enter the orphanage_name" class="form-control"  required/>
+            <div class="valid-feedback"> Looks good! </div>
+            <div class="invalid-feedback"> Please Enter Orphanage Name </div>
+       </div>
+       <div class="mb-3">
+            <label for="contact" class="form-label"><b>Contact</b></label>
+            <input type="text" name="listing[contact]" placeholder="Enter the contact number" class="form-control" required />
+            <div class="valid-feedback"> Looks good! </div>
+            <div class="invalid-feedback"> Please Enter Contact Number </div>
+       </div>
+       <div class="mb-3">
+            <label for="description" class="form-label"><b>Description</b></label>
+            <textarea name="listing[description]" class="form-control" placeholder="Enter description about child" required ></textarea>
+            <div class="valid-feedback"> Looks good! </div>
+            <div class="invalid-feedback"> Please Enter Description </div>
+       </div>
+        
+        <br>
+        <button class="btn btn-dark mb-3 add-btn">Add</button>
+        <br>
+    </form>
+    <br>
+</div>
+</div>
+</body>
